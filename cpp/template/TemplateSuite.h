@@ -1,4 +1,3 @@
-// MyTestSuite1.h
 #include <cxxtest/TestSuite.h>
 #include "Template.cpp"
 
@@ -9,13 +8,13 @@ public:
     {
         input_data = 1;
         expected_output = 2;
-        checkRun(run);
+        checkFunction(run);
     }
 
 private:
     int input_data;
     int expected_output;
-    void checkRun(int func(int))
+    void checkFunction(int func(int))
     {
         TS_ASSERT_EQUALS(func(input_data), expected_output);
     }
