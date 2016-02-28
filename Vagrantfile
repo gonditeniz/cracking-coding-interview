@@ -66,6 +66,6 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo aptitude install -y g++ python-nose cxxtest
+    sudo aptitude install -y g++ openjdk-7-jdk python-nose cxxtest junit4
   SHELL
 end
